@@ -1,5 +1,8 @@
 # Wazuh-Deployment
-This command installs Wazuh using the All-in-One installation script directly from the official Wazuh packages repository.
+Wazuh is an open-source tool that functions as a host-based intrusion detection system (endpoint). 
+It performs log analysis, integrity checking, Windows registry monitoring, rootkit detection, time-based alerting, and active response.
+
+You can easily install Wazuh using this command, which runs the All-in-One installation script directly from the official Wazuh packages repository.
 
 curl -sO https://packages.wazuh.com/4.12/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
 
