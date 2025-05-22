@@ -4,10 +4,10 @@ This helps you quickly spot unauthorized or suspicious activities, like hacking 
 
 This is the sample add configuration
 
-<syscheck>
-  <disabled>no</disabled>
-  <frequency>3600</frequency> <!-- scan every hour -->
-  <scan_on_start>yes</scan_on_start>
-  <directories>/etc</directories> <!-- monitor /etc folder -->
-  <alert_new_files>yes</alert_new_files>
-</syscheck>
+    <syscheck>
+    <disabled>no</disabled>
+    <frequency>3600</frequency> <!-- scan every hour -->
+    <scan_on_start>yes</scan_on_start>
+    <directories>/etc</directories> <!-- monitor /etc folder -->
+    <alert_new_files>yes</alert_new_files>
+    </syscheck>
