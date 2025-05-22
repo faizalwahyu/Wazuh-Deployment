@@ -2,13 +2,22 @@
 Wazuh is an open-source tool that functions as a host-based intrusion detection system (endpoint). 
 It performs log analysis, integrity checking, Windows registry monitoring, rootkit detection, time-based alerting, and active response.
 
-You can easily install Wazuh using this command, which runs the All-in-One installation script directly from the official Wazuh packages repository.
+Wazuh is a tool that provides deeper security visibility into an infrastructure by monitoring hosts at both the operating system and application levels. Wazuh consists of two main components: the Wazuh Server and the Wazuh Agent.
 
-curl -sO https://packages.wazuh.com/4.12/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
+    The Wazuh Server serves as the management platform for agents and provides a monitoring dashboard for file integrity, intrusion detection, and log management.
 
-By running this single command, you perform a quick and automated installation of a complete Wazuh stack on your server, suitable for testing or small-scale deployments.
+    The Wazuh Agent is installed on endpoint devices to read system data, collect logs, and send them securely to the Wazuh Server.
 
-After running the installation script, you will receive a username and password displayed in the terminal. These credentials allow you to log in to the Wazuh dashboard.
-Open your web browser and navigate to the IP address (or URL) shown in the installation output.
+Wazuh offers several key features:
+
+a) Log management and analysis: The Wazuh Agent reads operating system and application logs, then securely forwards them to the Wazuh Server for analysis and storage.
+
+b) File integrity monitoring: Wazuh monitors the file system, detecting changes in content, permissions, ownership, and file attributes.
+
+c) Intrusion and anomaly detection: The Wazuh Agent scans the system for malware, rootkits, and suspicious anomalies. It can detect hidden files, stealth processes, unauthorized network listeners, and inconsistencies in system call responses.
+
+d) Policy and compliance monitoring: Wazuh checks configuration files to ensure compliance with security policies, standards, or hardening guidelines based on security frameworks. Agents perform regular scans to detect vulnerable, unpatched, or misconfigured applications.
+
+These diverse capabilities are delivered by integrating OSSEC, OpenSCAP, and the Elastic Stack, creating a unified solution that simplifies configuration and management.
 
 After that, the next configurations are attached here in several configuration files.
