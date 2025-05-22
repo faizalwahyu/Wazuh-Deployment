@@ -18,3 +18,10 @@ Limitations:
   * Obtain a VirusTotal API key (free or paid)
   * Configure the key in the wazuh-integratord or ruleset
   * Ensure alerts (like from FIM or malware detection) trigger the integration
+  
+  <integration>
+  <name>virustotal</name>
+  <api_key>API_KEY</api_key> <!-- Replace with your VirusTotal API key -->
+  <group>syscheck</group>
+  <alert_format>json</alert_format>
+  </integration>
